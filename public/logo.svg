@@ -1,0 +1,34 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#6366f1" stroke="#818cf8" stroke-width="2"/>
+  
+  <!-- Universal Connection Symbol -->
+  <!-- Center Globe -->
+  <circle cx="100" cy="100" r="35" fill="none" stroke="white" stroke-width="3"/>
+  
+  <!-- Latitude Lines -->
+  <ellipse cx="100" cy="100" rx="35" ry="15" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="100" cy="100" rx="35" ry="25" fill="none" stroke="white" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Longitude Line -->
+  <ellipse cx="100" cy="100" rx="15" ry="35" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Connection Nodes (4 corners) -->
+  <circle cx="45" cy="45" r="8" fill="#fbbf24" stroke="white" stroke-width="2"/>
+  <circle cx="155" cy="45" r="8" fill="#fbbf24" stroke="white" stroke-width="2"/>
+  <circle cx="45" cy="155" r="8" fill="#fbbf24" stroke="white" stroke-width="2"/>
+  <circle cx="155" cy="155" r="8" fill="#fbbf24" stroke="white" stroke-width="2"/>
+  
+  <!-- Connection Lines -->
+  <line x1="45" y1="45" x2="100" y2="100" stroke="#fbbf24" stroke-width="2.5" opacity="0.8"/>
+  <line x1="155" y1="45" x2="100" y2="100" stroke="#fbbf24" stroke-width="2.5" opacity="0.8"/>
+  <line x1="45" y1="155" x2="100" y2="100" stroke="#fbbf24" stroke-width="2.5" opacity="0.8"/>
+  <line x1="155" y1="155" x2="100" y2="100" stroke="#fbbf24" stroke-width="2.5" opacity="0.8"/>
+  
+  <!-- Link Symbol -->
+  <path d="M 85 90 Q 85 80, 95 80 L 105 80 Q 115 80, 115 90 L 115 100" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 115 110 Q 115 120, 105 120 L 95 120 Q 85 120, 85 110 L 85 100" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Center Dot -->
+  <circle cx="100" cy="100" r="5" fill="white"/>
+</svg>
