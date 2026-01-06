@@ -48,18 +48,18 @@ const Navbar = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:1-800-ASSIST"
-              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              href="tel:855-750-6771"
+              className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">1-800-ASSIST</span>
+              <span className="font-medium">(855) 750-6771</span>
             </a>
-            <Link
-              to="/plans"
+            <a
+              href="tel:855-750-6771"
               className="btn-coral text-sm"
             >
-              Call Us
-            </Link>
+              Call Now
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,13 +97,13 @@ const Navbar = () => {
                     {link.name}
                   </Link>
                 ))}
-                <Link
-                  to="/plans"
+                <a
+                  href="tel:855-750-6771"
                   onClick={() => setIsOpen(false)}
                   className="btn-coral text-center mt-2"
                 >
-                  Call Us
-                </Link>
+                  Call Now: (855) 750-6771
+                </a>
               </div>
             </div>
           </motion.div>

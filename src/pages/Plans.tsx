@@ -178,16 +178,16 @@ const Plans = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    to="/contact"
+                  <a
+                    href="tel:855-750-6771"
                     className={`w-full inline-block text-center py-3 rounded-full font-semibold transition-all ${
                       pkg.popular
                         ? "bg-primary text-primary-foreground hover:shadow-lg"
                         : "bg-accent text-accent-foreground hover:shadow-lg"
                     }`}
                   >
-                    Call Now
-                  </Link>
+                    Call Now: (855) 750-6771
+                  </a>
                 </motion.div>
               ))}
             </div>
@@ -314,16 +314,16 @@ const Plans = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    to="/contact"
+                  <a
+                    href="tel:855-750-6771"
                     className={`w-full inline-block text-center py-3 rounded-full font-medium transition-all ${
                       area.popular
                         ? "bg-primary text-primary-foreground"
                         : "bg-accent/20 text-accent hover:bg-accent hover:text-accent-foreground"
                     }`}
                   >
-                    Call for Help
-                  </Link>
+                    Call for Help: (855) 750-6771
+                  </a>
                 </motion.div>
               ))}
             </div>
@@ -344,13 +344,13 @@ const Plans = () => {
           <div className="container mx-auto px-4 text-center">
             <p className="text-muted-foreground mb-4">Still have questions?</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/contact" className="btn-coral inline-flex items-center gap-2">
-                <span>Contact Us</span>
+              <a href="tel:855-750-6771" className="btn-coral inline-flex items-center gap-2">
+                <span>Call Now: (855) 750-6771</span>
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <a href="tel:1-800-STREAM" className="btn-navy inline-flex items-center gap-2">
+              </a>
+              <a href="tel:855-750-6771" className="btn-navy inline-flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>1-800-STREAM</span>
+                <span>(855) 750-6771</span>
               </a>
             </div>
           </div>

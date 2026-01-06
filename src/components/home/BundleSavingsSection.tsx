@@ -148,15 +148,15 @@ const BundleSavingsSection = () => {
                                 </ul>
 
                                 {/* CTA */}
-                                <Link
-                                    to="/contact"
+                                <a
+                                    href="tel:855-750-6771"
                                     className={`w-full inline-block text-center py-3 px-6 rounded-xl font-semibold transition-all ${bundle.popular
                                         ? 'bg-gradient-to-r from-secondary to-accent text-white hover:shadow-lg hover:scale-105'
                                         : 'bg-muted text-foreground hover:bg-muted/80'
                                         }`}
                                 >
-                                    Call Now
-                                </Link>
+                                    Call Now: (855) 750-6771
+                                </a>
                             </div>
                         </motion.div>
                     ))}

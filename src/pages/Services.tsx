@@ -265,10 +265,10 @@ const Services = () => {
               <p className="text-xl text-primary-foreground/70 mb-8">
                 Get personalized assistance finding the right connectivity providers for your needs.
               </p>
-              <Link to="/contact" className="btn-coral inline-flex items-center gap-2 text-lg">
-                <span>Call Now</span>
+              <a href="tel:855-750-6771" className="btn-coral inline-flex items-center gap-2 text-lg">
+                <span>Call Now: (855) 750-6771</span>
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </motion.div>
           </div>
         </section>

@@ -147,17 +147,17 @@ const PricingPreview = () => {
               </ul>
 
               {/* CTA */}
-              <Link
-                to="/plans"
+              <a
+                href="tel:855-750-6771"
                 className={`w-full py-4 rounded-full font-semibold text-center flex items-center justify-center gap-2 transition-all duration-300 ${
                   plan.popular
                     ? "bg-accent text-accent-foreground hover:shadow-lg"
                     : "bg-primary text-primary-foreground hover:shadow-lg"
                 }`}
               >
-                <span>Call Now</span>
+                <span>Call Now: (855) 750-6771</span>
                 <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </motion.div>
           ))}
         </div>
@@ -170,13 +170,13 @@ const PricingPreview = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Link
-            to="/plans"
+          <a
+            href="tel:855-750-6771"
             className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all"
           >
-            <span>Compare all plans in detail</span>
+            <span>Call (855) 750-6771 to get started</span>
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

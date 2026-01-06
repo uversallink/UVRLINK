@@ -149,10 +149,10 @@ const FAQ = () => {
                 Our assistance team is here to help guide you through any inquiries.
               </p>
               <a
-                href="/contact"
+                href="tel:855-750-6771"
                 className="btn-coral inline-flex items-center gap-2"
               >
-                Get Assistance
+                Call Now: (855) 750-6771
               </a>
             </motion.div>
           </div>

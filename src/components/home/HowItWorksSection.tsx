@@ -101,8 +101,8 @@ const HowItWorksSection = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <a href="/contact" className="btn-coral inline-flex items-center gap-2">
-                        Get Started Today
+                    <a href="tel:855-750-6771" className="btn-coral inline-flex items-center gap-2">
+                        Call Now: (855) 750-6771
                     </a>
                 </motion.div>
             </div>

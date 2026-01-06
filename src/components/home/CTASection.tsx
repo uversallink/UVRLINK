@@ -45,13 +45,13 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Link to="/plans" className="btn-coral inline-flex items-center gap-2 text-lg">
-              <span>Call 1-800-ASSIST</span>
+            <a href="tel:855-750-6771" className="btn-coral inline-flex items-center gap-2 text-lg">
+              <span>Call Now: (855) 750-6771</span>
               <ArrowRight className="w-5 h-5" />
-            </Link>
-            <a href="tel:1-800-ASSIST" className="btn-navy inline-flex items-center gap-2 text-lg">
+            </a>
+            <a href="tel:855-750-6771" className="btn-navy inline-flex items-center gap-2 text-lg">
               <Phone className="w-5 h-5" />
-              <span>Call 1-800-ASSIST</span>
+              <span>Call (855) 750-6771</span>
             </a>
           </div>
 

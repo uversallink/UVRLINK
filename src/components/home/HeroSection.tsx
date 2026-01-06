@@ -61,14 +61,14 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/plans" className="btn-coral inline-flex items-center justify-center gap-2">
-                <span>Call Now: 1-800-ASSIST</span>
+              <a href="tel:855-750-6771" className="btn-coral inline-flex items-center justify-center gap-2">
+                <span>Call Now: (855) 750-6771</span>
                 <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link to="/about" className="btn-navy inline-flex items-center justify-center gap-2">
+              </a>
+              <a href="tel:855-750-6771" className="btn-navy inline-flex items-center justify-center gap-2">
                 <Play className="w-5 h-5" />
-                <span>Contact Support</span>
-              </Link>
+                <span>Speak to an Expert</span>
+              </a>
             </div>
 
             {/* Stats */}
