@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { Phone, Send, MessageCircle } from "lucide-react";
+import { Phone, Send, MessageCircle, MapPin } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -48,7 +48,7 @@ const Contact = () => {
         </div>
 
         {/* Hero */}
-        <section className="py-20 bg-primary relative overflow-hidden">
+        <section className="py-12 sm:py-16 md:py-20 bg-primary relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
           <div className="container mx-auto px-4 relative">
             <motion.div
@@ -57,10 +57,10 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-6">
+              <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 sm:mb-6">
                 Request Assistance
               </h1>
-              <p className="text-xl text-primary-foreground/70">
+              <p className="text-base sm:text-lg md:text-xl text-primary-foreground/70">
                 Have questions about connectivity options? We're here to guide you. Reach out for independent assistance.
               </p>
             </motion.div>
@@ -68,40 +68,58 @@ const Contact = () => {
         </section>
 
         {/* Contact Info Cards */}
-        <section className="py-16 bg-background -mt-10 relative z-10">
+        <section className="py-12 sm:py-16 bg-background -mt-8 sm:-mt-10 relative z-10">
           <div className="container mx-auto px-4">
-            <div className="flex justify-center">
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto">
               <motion.div
-                className="card-premium text-center max-w-xs"
+                className="card-premium text-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0 }}
               >
-                <div className="w-14 h-14 rounded-2xl bg-accent/20 flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-7 h-7 text-accent" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-accent/20 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <Phone className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
                 </div>
-                <h3 className="font-display font-semibold text-lg text-foreground mb-1">
+                <h3 className="font-display font-semibold text-base sm:text-lg text-foreground mb-1">
                   Call for Assistance
                 </h3>
-                <p className="font-medium text-foreground">1-800-ASSIST</p>
-                <p className="text-sm text-muted-foreground">Independent Guidance Platform</p>
+                <a href="tel:1-800-274-7478" className="font-medium text-foreground hover:text-accent transition-colors">
+                  1-800-ASSIST3
+                </a>
+                <p className="text-sm text-muted-foreground mt-1">Independent Guidance Platform</p>
+              </motion.div>
+              
+              <motion.div
+                className="card-premium text-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-accent/20 flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-accent" />
+                </div>
+                <h3 className="font-display font-semibold text-base sm:text-lg text-foreground mb-1">
+                  Our Location
+                </h3>
+                <p className="font-medium text-foreground">107 Shorewood Ln</p>
+                <p className="text-sm text-muted-foreground">Huntsville, AL 35811</p>
               </motion.div>
             </div>
           </div>
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-20 bg-background">
+        <section className="py-12 sm:py-16 md:py-20 bg-background">
           <div className="container mx-auto px-4">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-4">
+            <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16">
+              <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 sm:mb-4">
                 Why Choose Uversal Link
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 We're an independent platform dedicated to providing unbiased guidance for your connectivity needs.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               <motion.div
                 className="card-premium"
                 initial={{ opacity: 0, y: 20 }}
@@ -159,19 +177,19 @@ const Contact = () => {
         </section>
 
         {/* Contact Form */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-16">
+            <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16">
               {/* Form */}
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-display font-bold text-3xl text-foreground mb-6">
+                <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4 sm:mb-6">
                   Send Us a Message
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -274,11 +292,11 @@ const Contact = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="font-display font-bold text-3xl text-foreground mb-6">
+                <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4 sm:mb-6">
                   Quick Help
                 </h2>
 
-                <div className="space-y-6">
+                <div className="space-y-5 sm:space-y-6">
                   <div className="card-premium">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
@@ -326,11 +344,11 @@ const Contact = () => {
                       Our independent assistance team is ready to help guide you through your options.
                     </p>
                     <a
-                      href="tel:1-800-ASSIST"
+                      href="tel:1-800-274-7478"
                       className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all"
                     >
                       <Phone className="w-5 h-5" />
-                      <span>Call 1-800-ASSIST</span>
+                      <span>Call 1-800-ASSIST3</span>
                     </a>
                   </div>
                 </div>

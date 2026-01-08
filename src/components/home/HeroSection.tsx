@@ -5,13 +5,13 @@ import heroImage from "@/assets/hero-family.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
+    <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden bg-background">
       {/* Disclosure Banner */}
-      <div className="absolute top-0 left-0 right-0 bg-accent/10 border-b border-accent/30 py-3 z-20">
+      <div className="absolute top-0 left-0 right-0 bg-accent/10 border-b border-accent/30 py-2 sm:py-3 z-20">
         <div className="container mx-auto px-4">
-          <p className="text-center text-sm text-foreground flex items-center justify-center gap-2">
-            <Info className="w-4 h-4" />
-            <span><strong>Independent Service:</strong> We are an independent third-party assistance platform launched in 2026. We provide guidance services for a separate fee and are not affiliated with any provider.</span>
+          <p className="text-center text-xs sm:text-sm text-foreground flex items-center justify-center gap-1 sm:gap-2">
+            <Info className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+            <span className="leading-tight"><strong>Independent Service:</strong> We are an independent third-party assistance platform launched in 2026. We provide guidance services for a separate fee and are not affiliated with any provider.</span>
           </p>
         </div>
       </div>
@@ -38,66 +38,66 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Content */}
           <motion.div
-            className="space-y-8"
+            className="space-y-5 sm:space-y-6 md:space-y-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/30">
-              <Zap className="w-4 h-4 text-secondary" />
-              <span className="text-sm font-medium text-foreground">Independent Connectivity Guidance</span>
+            <div className="hidden sm:inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-secondary/20 border border-secondary/30">
+              <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-secondary" />
+              <span className="text-xs sm:text-sm font-medium text-foreground">Independent Connectivity Guidance</span>
             </div>
 
-            <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-tight text-foreground">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight text-foreground">
               Find Your Perfect Connection
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
               We help guide you through internet, cable, and streaming options. Get personalized assistance to find services that match your needs and budget.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:855-750-6771" className="btn-coral inline-flex items-center justify-center gap-2">
-                <span>Call Now: (855) 750-6771</span>
-                <ArrowRight className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <a href="tel:855-750-6771" className="btn-coral inline-flex items-center justify-center gap-2 text-sm sm:text-base">
+                <span className="hidden xs:inline">Call Now: </span><span>(855) 750-6771</span>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              <a href="tel:855-750-6771" className="btn-navy inline-flex items-center justify-center gap-2">
-                <Play className="w-5 h-5" />
+              <a href="tel:855-750-6771" className="btn-navy inline-flex items-center justify-center gap-2 text-sm sm:text-base">
+                <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Speak to an Expert</span>
               </a>
             </div>
 
             {/* Stats */}
-            <div className="flex items-center gap-8 pt-4">
-              <div>
-                <p className="font-display font-bold text-3xl text-foreground">2026</p>
-                <p className="text-sm text-muted-foreground">Founded</p>
+            <div className="flex items-center gap-4 sm:gap-6 md:gap-8 pt-4 overflow-x-auto">
+              <div className="flex-shrink-0">
+                <p className="font-display font-bold text-2xl sm:text-3xl text-foreground">2026</p>
+                <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Founded</p>
               </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div>
-                <p className="font-display font-bold text-3xl text-foreground">24/7</p>
-                <p className="text-sm text-muted-foreground">Assistance</p>
+              <div className="w-px h-10 sm:h-12 bg-border flex-shrink-0"></div>
+              <div className="flex-shrink-0">
+                <p className="font-display font-bold text-2xl sm:text-3xl text-foreground">24/7</p>
+                <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Assistance</p>
               </div>
-              <div className="w-px h-12 bg-border"></div>
-              <div>
-                <p className="font-display font-bold text-3xl text-foreground">100%</p>
-                <p className="text-sm text-muted-foreground">Independent</p>
+              <div className="w-px h-10 sm:h-12 bg-border flex-shrink-0"></div>
+              <div className="flex-shrink-0">
+                <p className="font-display font-bold text-2xl sm:text-3xl text-foreground">100%</p>
+                <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Independent</p>
               </div>
             </div>
           </motion.div>
 
           {/* Image */}
           <motion.div
-            className="relative"
+            className="relative mt-8 lg:mt-0"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={heroImage}
                 alt="Family enjoying connectivity assistance"
@@ -109,28 +109,28 @@ const HeroSection = () => {
 
             {/* Floating elements */}
             <motion.div
-              className="absolute -bottom-6 -left-6 bg-card rounded-2xl p-4 shadow-card border border-border"
+              className="absolute -bottom-4 sm:-bottom-6 -left-3 sm:-left-6 bg-card rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-card border border-border"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                  <Wifi className="w-6 h-6 text-secondary" />
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-secondary/20 flex items-center justify-center">
+                  <Wifi className="w-5 h-5 sm:w-6 sm:h-6 text-secondary" />
                 </div>
                 <div>
-                  <p className="font-display font-bold text-foreground">Expert</p>
-                  <p className="text-sm text-muted-foreground">Guidance</p>
+                  <p className="font-display font-bold text-sm sm:text-base text-foreground">Expert</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Guidance</p>
                 </div>
               </div>
             </motion.div>
 
             <motion.div
-              className="absolute -top-6 -right-6 bg-accent rounded-2xl p-4 shadow-card"
+              className="absolute -top-4 sm:-top-6 -right-3 sm:-right-6 bg-accent rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-card"
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
             >
-              <p className="font-display font-bold text-accent-foreground text-lg">Service Fee</p>
-              <p className="font-display font-bold text-accent-foreground text-3xl">Varies<span className="text-lg">*</span></p>
+              <p className="font-display font-bold text-accent-foreground text-sm sm:text-base">Service Fee</p>
+              <p className="font-display font-bold text-accent-foreground text-2xl sm:text-3xl">Varies<span className="text-sm sm:text-lg">*</span></p>
             </motion.div>
           </motion.div>
         </div>

@@ -27,7 +27,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-primary relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-primary relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
@@ -35,33 +35,33 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4 relative">
         {/* Section Header */}
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-primary-foreground mb-4">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-primary-foreground mb-3 sm:mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-primary-foreground/70">
+          <p className="text-base sm:text-lg text-primary-foreground/70">
             Read about experiences with our independent assistance service
           </p>
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
-              className="bg-primary-foreground/10 backdrop-blur-sm rounded-3xl p-8 border border-primary-foreground/10"
+              className="bg-primary-foreground/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-primary-foreground/10"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               {/* Quote icon */}
-              <Quote className="w-10 h-10 text-accent mb-6" />
+              <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-accent mb-4 sm:mb-6" />
 
               {/* Rating */}
               <div className="flex items-center gap-1 mb-4">
@@ -95,25 +95,25 @@ const TestimonialsSection = () => {
 
         {/* Trust badges */}
         <motion.div
-          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-primary-foreground/60"
+          className="mt-8 sm:mt-12 md:mt-16 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-primary-foreground/60"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <div className="text-center">
-            <p className="font-display font-bold text-3xl text-primary-foreground">500K+</p>
-            <p className="text-sm">Happy Customers</p>
+            <p className="font-display font-bold text-2xl sm:text-3xl text-primary-foreground">500K+</p>
+            <p className="text-xs sm:text-sm">Happy Customers</p>
           </div>
-          <div className="w-px h-12 bg-primary-foreground/20"></div>
+          <div className="w-px h-10 sm:h-12 bg-primary-foreground/20"></div>
           <div className="text-center">
-            <p className="font-display font-bold text-3xl text-primary-foreground">4.9/5</p>
-            <p className="text-sm">Average Rating</p>
+            <p className="font-display font-bold text-2xl sm:text-3xl text-primary-foreground">4.9/5</p>
+            <p className="text-xs sm:text-sm">Average Rating</p>
           </div>
-          <div className="w-px h-12 bg-primary-foreground/20"></div>
+          <div className="w-px h-10 sm:h-12 bg-primary-foreground/20"></div>
           <div className="text-center">
-            <p className="font-display font-bold text-3xl text-primary-foreground">#1</p>
-            <p className="text-sm">Rated Provider</p>
+            <p className="font-display font-bold text-2xl sm:text-3xl text-primary-foreground">#1</p>
+            <p className="text-xs sm:text-sm">Rated Provider</p>
           </div>
         </motion.div>
       </div>

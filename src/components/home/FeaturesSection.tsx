@@ -42,7 +42,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-muted/30 via-background to-muted/20 relative overflow-hidden">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-muted/30 via-background to-muted/20 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         <div className="absolute top-20 right-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
@@ -52,22 +52,22 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4 relative">
         {/* Section Header */}
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-20"
+          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 md:mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-3 sm:mb-4">
             Why Choose StreamLink?
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Experience the perfect blend of speed, entertainment, and reliability with our comprehensive packages.
           </p>
         </motion.div>
 
         {/* Unique Asymmetric Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {/* Large Feature Card - Spans 2 columns on large screens */}
           {(() => {
             const Icon0 = features[0].icon;

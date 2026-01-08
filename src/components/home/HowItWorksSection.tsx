@@ -30,7 +30,7 @@ const steps = [
 
 const HowItWorksSection = () => {
     return (
-        <section className="py-24 bg-background relative overflow-hidden">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 z-0 opacity-5">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-secondary rounded-full blur-3xl"></div>
@@ -40,22 +40,22 @@ const HowItWorksSection = () => {
             <div className="container mx-auto px-4 relative z-10">
                 {/* Section Header */}
                 <motion.div
-                    className="text-center max-w-3xl mx-auto mb-16"
+                    className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground mb-4">
+                    <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-3 sm:mb-4">
                         How Our Assistance Works
                     </h2>
-                    <p className="text-lg text-muted-foreground">
+                    <p className="text-base sm:text-lg text-muted-foreground">
                         From initial inquiry to provider connection, we guide you through every step of finding the right connectivity solution.
                     </p>
                 </motion.div>
 
                 {/* Steps Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                     {steps.map((step, index) => (
                         <motion.div
                             key={step.title}
@@ -72,17 +72,17 @@ const HowItWorksSection = () => {
 
                             <div className="card-premium text-center relative z-10 h-full">
                                 {/* Step number */}
-                                <div className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center shadow-lg">
-                                    <span className="font-display font-bold text-white text-sm">{index + 1}</span>
+                                <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center shadow-lg">
+                                    <span className="font-display font-bold text-white text-xs sm:text-sm">{index + 1}</span>
                                 </div>
 
                                 {/* Icon */}
-                                <div className={`w-20 h-20 rounded-2xl ${step.color} flex items-center justify-center mx-auto mb-4`}>
-                                    <step.icon className="w-10 h-10" />
+                                <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl ${step.color} flex items-center justify-center mx-auto mb-3 sm:mb-4`}>
+                                    <step.icon className="w-8 h-8 sm:w-10 sm:h-10" />
                                 </div>
 
                                 {/* Content */}
-                                <h3 className="font-display font-semibold text-xl text-foreground mb-3">
+                                <h3 className="font-display font-semibold text-lg sm:text-xl text-foreground mb-2 sm:mb-3">
                                     {step.title}
                                 </h3>
                                 <p className="text-muted-foreground leading-relaxed">
