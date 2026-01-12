@@ -64,10 +64,10 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ - Uversal Link</title>
+        <title>FAQ - Independent Internet & Cable TV Advisory Service</title>
         <meta
           name="description"
-          content="Frequently asked questions about Uversal Link's independent service assistance platform. Learn about our guidance services and policies."
+          content="Frequently asked questions about Uversal Link's independent advisory service for internet and cable TV. Learn about our guidance services. Not an ISP."
         />
       </Helmet>
       <Layout>

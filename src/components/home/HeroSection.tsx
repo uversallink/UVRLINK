@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="container mx-auto px-4">
           <p className="text-center text-xs sm:text-sm text-foreground flex items-center justify-center gap-1 sm:gap-2">
             <Info className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-            <span className="leading-tight"><strong>Independent Service:</strong> We are an independent third-party assistance platform launched in 2026. We provide guidance services for a separate fee and are not affiliated with any provider.</span>
+            <span className="leading-tight"><strong>Not an ISP. No brand affiliation.</strong> We provide independent third-party guidance for internet and cable TV services. We are not affiliated, authorized, or endorsed by any telecom/cable company.</span>
           </p>
         </div>
       </div>
@@ -53,21 +53,21 @@ const HeroSection = () => {
             </div>
 
             <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight text-foreground">
-              Find Your Perfect Connection
+              Get Independent Internet & Cable TV Guidance
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-              We help guide you through internet, cable, and streaming options. Get personalized assistance to find services that match your needs and budget.
+              We help you understand internet, broadband, and cable TV service options. Navigate service provider processes with practical guidance from a third-party advisor.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a href="tel:855-750-6771" className="btn-coral inline-flex items-center justify-center gap-2 text-sm sm:text-base">
-                <span className="hidden xs:inline">Call Now: </span><span>(855) 750-6771</span>
+                <span>Call for Independent Service Guidance</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a href="tel:855-750-6771" className="btn-navy inline-flex items-center justify-center gap-2 text-sm sm:text-base">
                 <Play className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span>Speak to an Expert</span>
+                <span>Talk to a Third-Party Advisor</span>
               </a>
             </div>
 
@@ -80,7 +80,7 @@ const HeroSection = () => {
               <div className="w-px h-10 sm:h-12 bg-border flex-shrink-0"></div>
               <div className="flex-shrink-0">
                 <p className="font-display font-bold text-2xl sm:text-3xl text-foreground">24/7</p>
-                <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Assistance</p>
+                <p className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">Support</p>
               </div>
               <div className="w-px h-10 sm:h-12 bg-border flex-shrink-0"></div>
               <div className="flex-shrink-0">
@@ -118,7 +118,7 @@ const HeroSection = () => {
                   <Wifi className="w-5 h-5 sm:w-6 sm:h-6 text-secondary" />
                 </div>
                 <div>
-                  <p className="font-display font-bold text-sm sm:text-base text-foreground">Expert</p>
+                  <p className="font-display font-bold text-sm sm:text-base text-foreground">Advisory</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">Guidance</p>
                 </div>
               </div>
@@ -129,8 +129,8 @@ const HeroSection = () => {
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
             >
-              <p className="font-display font-bold text-accent-foreground text-sm sm:text-base">Service Fee</p>
-              <p className="font-display font-bold text-accent-foreground text-2xl sm:text-3xl">Varies<span className="text-sm sm:text-lg">*</span></p>
+              <p className="font-display font-bold text-accent-foreground text-sm sm:text-base">Third-Party</p>
+              <p className="font-display font-bold text-accent-foreground text-lg sm:text-2xl">Service</p>
             </motion.div>
           </motion.div>
         </div>

@@ -42,10 +42,10 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-primary-foreground mb-3 sm:mb-4">
-            What Our Clients Say
+            What People Say
           </h2>
           <p className="text-base sm:text-lg text-primary-foreground/70">
-            Read about experiences with our independent assistance service
+            Hear from users who received independent guidance from our advisory service
           </p>
         </motion.div>
 

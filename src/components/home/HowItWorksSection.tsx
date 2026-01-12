@@ -5,25 +5,25 @@ const steps = [
     {
         icon: Search,
         title: "Share Your Needs",
-        description: "Tell us about your internet, cable, and streaming needs. We'll research what options are available in your area.",
+        description: "Tell us about your internet and cable TV needs. We'll help you understand what options may be available in your area.",
         color: "bg-blue-500/10 text-blue-500",
     },
     {
         icon: Phone,
-        title: "Get Guidance",
-        description: "Our team provides personalized assistance to help you understand your options. We compare features, pricing, and availability.",
+        title: "Get Independent Guidance",
+        description: "Our third-party advisors help you understand your options. We provide educational information about features and service types.",
         color: "bg-purple-500/10 text-purple-500",
     },
     {
         icon: Calendar,
         title: "Make Informed Decision",
-        description: "With our guidance, you can confidently choose the service that fits your needs. We help clarify terms and features.",
+        description: "With our guidance, you can better understand service options. We clarify terms and help you learn about connectivity choices.",
         color: "bg-pink-500/10 text-pink-500",
     },
     {
         icon: Zap,
-        title: "Connect with Provider",
-        description: "Contact your chosen provider directly to set up service. They handle installation and billing according to their terms.",
+        title: "Contact Provider Directly",
+        description: "You contact your chosen provider directly to set up service. They handle all installation, billing, and official service according to their terms.",
         color: "bg-orange-500/10 text-orange-500",
     },
 ];
@@ -47,10 +47,13 @@ const HowItWorksSection = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-3 sm:mb-4">
-                        How Our Assistance Works
+                        How Our Guidance Works
                     </h2>
-                    <p className="text-base sm:text-lg text-muted-foreground">
-                        From initial inquiry to provider connection, we guide you through every step of finding the right connectivity solution.
+                    <p className="text-base sm:text-lg text-muted-foreground mb-3">
+                        From initial inquiry to provider connection, we provide independent guidance to help you understand your connectivity options.
+                    </p>
+                    <p className="text-sm text-muted-foreground/80">
+                        <strong>Disclaimer:</strong> We do not sell official ISP services or provide guaranteed technical fixes. We are an independent advisory service.
                     </p>
                 </motion.div>
 

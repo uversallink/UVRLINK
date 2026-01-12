@@ -3,39 +3,39 @@ import { Wifi, Tv, Shield, Headphones, Zap, Globe } from "lucide-react";
 
 const features = [
   {
+    icon: Headphones,
+    title: "Independent Advisory Service",
+    description: "Get guidance from third-party advisors. We help you understand internet, cable TV, and broadband service options without brand affiliation.",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80",
+  },
+  {
     icon: Wifi,
-    title: "Fiber-Fast Internet",
-    description: "Speeds up to 1 Gig with unlimited data. Perfect for streaming, gaming, and working from home.",
+    title: "Internet Service Guidance",
+    description: "Understand broadband options, speed requirements, and connectivity solutions. Learn how to navigate ISP selection and service processes.",
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
   },
   {
     icon: Tv,
-    title: "Premium TV Packages",
-    description: "300+ HD channels including sports, movies, and premium networks with DVR included.",
+    title: "Cable TV Service Help",
+    description: "Get assistance understanding cable TV options, channel packages, and streaming alternatives. We provide educational guidance only.",
     image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=800&q=80",
   },
   {
     icon: Shield,
-    title: "Advanced Security",
-    description: "Built-in network protection keeps your devices safe from threats and intrusions.",
+    title: "Unbiased Information",
+    description: "We are not affiliated with any ISP or telecom company. All provider mentions are for informational purposes only. No official service or support provided.",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80",
   },
   {
-    icon: Headphones,
-    title: "24/7 Support",
-    description: "Expert support available around the clock via phone, chat, or in-home service.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80",
-  },
-  {
     icon: Zap,
-    title: "Easy Installation",
-    description: "Professional installation within 24-48 hours. Self-install options also available.",
+    title: "Service Provider Navigation",
+    description: "Learn how to navigate service provider processes, understand contract terms, and make informed decisions about connectivity services.",
     image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
   },
   {
     icon: Globe,
-    title: "Whole-Home WiFi",
-    description: "WiFi 6E mesh system covers every corner of your home with strong, reliable signal.",
+    title: "Practical Guidance",
+    description: "Get practical advice on connectivity issues, service comparison, and understanding your options. Educational assistance only - no guaranteed fixes.",
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
   },
 ];
@@ -59,10 +59,13 @@ const FeaturesSection = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-3 sm:mb-4">
-            Why Choose StreamLink?
+            What We Do
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground">
-            Experience the perfect blend of speed, entertainment, and reliability with our comprehensive packages.
+          <p className="text-base sm:text-lg text-muted-foreground mb-4">
+            At uversallink.com, we help users understand internet/broadband service options, get practical guidance on connectivity issues, and learn how to navigate service provider processes.
+          </p>
+          <p className="text-sm text-muted-foreground/80">
+            <strong>Important:</strong> We do NOT provide official service, ISP support, or represent any telecom brand. We are not an internet service provider (ISP).
           </p>
         </motion.div>
 

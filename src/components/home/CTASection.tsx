@@ -38,20 +38,23 @@ const CTASection = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-            Ready for Expert Guidance?
+            Need Independent Guidance?
           </h2>
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Get personalized assistance to find the perfect connectivity solution for your needs. Independent guidance you can trust.
+          <p className="text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
+            Talk to a third-party internet advisor. Get independent service guidance for internet, cable TV, and broadband options.
+          </p>
+          <p className="text-sm text-muted-foreground/80 mb-10 max-w-2xl mx-auto">
+            <strong>Not an ISP. No brand affiliation.</strong> We provide advisory services only and are not affiliated with any telecom company.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a href="tel:855-750-6771" className="btn-coral inline-flex items-center gap-2 text-lg">
-              <span>Call Now: (855) 750-6771</span>
+              <span>Call for Independent Service Guidance</span>
               <ArrowRight className="w-5 h-5" />
             </a>
             <a href="tel:855-750-6771" className="btn-navy inline-flex items-center gap-2 text-lg">
               <Phone className="w-5 h-5" />
-              <span>Call (855) 750-6771</span>
+              <span>Talk to a Third-Party Advisor</span>
             </a>
           </div>
 
@@ -59,11 +62,11 @@ const CTASection = () => {
           <div className="flex flex-wrap items-center justify-center gap-8 text-muted-foreground">
             <div className="flex items-center gap-2">
               <MessageCircle className="w-5 h-5 text-secondary" />
-              <span>Assistance available</span>
+              <span>Advisory support available</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-accent" />
-              <span>Guidance consultation</span>
+              <span>Independent consultation</span>
             </div>
           </div>
         </motion.div>

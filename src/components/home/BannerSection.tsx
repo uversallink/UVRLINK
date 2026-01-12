@@ -79,7 +79,7 @@ const BannerSection = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
                 <Award className="w-4 h-4 text-white" />
-                <span className="text-sm font-semibold text-white">Limited Time Offer</span>
+                <span className="text-sm font-semibold text-white">Independent Advisory Service</span>
               </motion.div>
 
               {/* Heading */}
@@ -90,7 +90,7 @@ const BannerSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                Get the Speed You Deserve
+                Get the Guidance You Need
               </motion.h2>
 
               {/* Description */}
@@ -101,8 +101,7 @@ const BannerSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                Switch to StreamLink today and experience lightning-fast fiber internet 
-                combined with premium entertainment. No contracts, no hidden fees.
+                Get help understanding your internet and cable TV service options. Independent, third-party guidance to navigate service provider processes. Not affiliated with any ISP or telecom company.
               </motion.p>
 
               {/* Stats */}
@@ -114,16 +113,16 @@ const BannerSection = () => {
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
                 <div className="text-center">
-                  <p className="font-display font-bold text-3xl text-white mb-1">1 Gig</p>
-                  <p className="text-sm text-white/70">Max Speed</p>
-                </div>
-                <div className="text-center">
-                  <p className="font-display font-bold text-3xl text-white mb-1">300+</p>
-                  <p className="text-sm text-white/70">HD Channels</p>
+                  <p className="font-display font-bold text-3xl text-white mb-1">100%</p>
+                  <p className="text-sm text-white/70">Independent</p>
                 </div>
                 <div className="text-center">
                   <p className="font-display font-bold text-3xl text-white mb-1">24/7</p>
                   <p className="text-sm text-white/70">Support</p>
+                </div>
+                <div className="text-center">
+                  <p className="font-display font-bold text-3xl text-white mb-1">No</p>
+                  <p className="text-sm text-white/70">ISP Ties</p>
                 </div>
               </motion.div>
 
@@ -135,18 +134,18 @@ const BannerSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                <Link
-                  to="/plans"
+                <a
+                  href="tel:855-750-6771"
                   className="btn-coral inline-flex items-center justify-center gap-2 text-lg px-8 py-4"
                 >
-                  <span>View All Plans</span>
+                  <span>Call for Cable TV Service Guidance</span>
                   <Zap className="w-5 h-5" />
-                </Link>
+                </a>
                 <Link
                   to="/contact"
                   className="inline-flex items-center justify-center gap-2 text-lg px-8 py-4 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
                 >
-                  <span>Contact Us</span>
+                  <span>Learn More</span>
                 </Link>
               </motion.div>
             </div>

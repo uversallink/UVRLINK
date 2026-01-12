@@ -31,10 +31,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Uversal Link Assistance</title>
+        <title>Contact Us - Independent Internet & Cable TV Guidance</title>
         <meta
           name="description"
-          content="Get in touch with Uversal Link for independent connectivity guidance. Assistance services available. We're an independent platform, not affiliated with providers."
+          content="Get in touch with Uversal Link for independent internet and cable TV guidance. Third-party advisory services. Not an ISP - no brand affiliation."
         />
       </Helmet>
       <Layout>
@@ -42,7 +42,7 @@ const Contact = () => {
         <div className="bg-accent/10 border-b border-accent/30 py-3">
           <div className="container mx-auto px-4">
             <p className="text-center text-sm text-foreground">
-              <strong>Important:</strong> Uversal Link is an independent third-party service assistance startup, launched in 2026. We are not affiliated with any cable, internet, or streaming provider. When you call, you'll hear: "Thank you for calling Uversal Link, an independent service assistance platform."
+              <strong>Not an ISP. No brand affiliation.</strong> Uversal Link is an independent third-party advisory service. We provide guidance for internet and cable TV services. We are not affiliated with any telecom/cable company.
             </p>
           </div>
         </div>
@@ -58,10 +58,10 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4 sm:mb-6">
-                Request Assistance
+                Get Independent Guidance
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-primary-foreground/70">
-                Have questions about connectivity options? We're here to guide you. Reach out for independent assistance.
+                Have questions about internet or cable TV services? We're here to provide third-party guidance. Reach out for independent advisory services.
               </p>
             </motion.div>
           </div>

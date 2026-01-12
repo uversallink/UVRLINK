@@ -9,48 +9,48 @@ import remoteImage from "@/assets/remote.png";
 const assistanceServices = [
   {
     icon: Wifi,
-    title: "Internet Provider Research",
-    description: "We help you find and compare internet providers in your area. Research fiber, cable, DSL, and satellite options based on your needs.",
-    features: ["Speed comparison", "Price analysis", "Availability check", "Contract review"],
+    title: "Internet Service Guidance",
+    description: "We help you understand internet service options in your area. Learn about fiber, cable, DSL, and satellite connectivity.",
+    features: ["Understanding speed needs", "Provider information", "Coverage education", "Terms clarification"],
   },
   {
     icon: Home,
-    title: "Coverage Analysis",
-    description: "Get assistance understanding which providers serve your specific address. We help you navigate coverage maps and availability.",
+    title: "Broadband Navigation",
+    description: "Get help navigating broadband service provider processes. We provide guidance on understanding coverage and availability.",
   },
   {
     icon: Shield,
-    title: "Plan Comparison",
-    description: "Compare features, pricing, and terms across multiple providers. We help you understand the fine print and make informed decisions.",
+    title: "Service Comparison Education",
+    description: "Learn how to compare features, pricing, and terms across different service types. We help you understand the differences.",
   },
   {
     icon: Cloud,
-    title: "Setup Guidance",
-    description: "Receive recommendations on equipment, installation options, and setup procedures once you choose a provider.",
+    title: "Practical Guidance",
+    description: "Receive educational guidance on connectivity issues. We help you understand your options without providing guaranteed technical fixes.",
   },
 ];
 
 const tvAssistanceServices = [
   {
     icon: Tv,
-    title: "TV Provider Comparison",
-    description: "Compare cable, satellite, and streaming TV providers. We help you understand channel lineups, pricing, and equipment requirements.",
-    info: "Multiple provider options",
+    title: "Cable TV Service Help",
+    description: "Get independent cable TV assistance. We help you understand cable, satellite, and streaming TV options.",
+    info: "Educational guidance only",
   },
   {
     icon: Monitor,
-    title: "Channel Research",
-    description: "Find out which providers offer the channels and content you want. We help you compare channel packages and on-demand options.",
+    title: "Channel Information",
+    description: "Learn about channel packages and content offerings. We provide information to help you understand your options.",
   },
   {
     icon: Smartphone,
-    title: "Streaming Guidance",
-    description: "Get assistance comparing streaming services and traditional TV. We help you understand app availability and device compatibility.",
+    title: "Streaming Education",
+    description: "Get help understanding streaming services and traditional TV differences. We explain app availability and device compatibility.",
   },
   {
     icon: Gamepad2,
-    title: "Bundle Analysis",
-    description: "Compare bundled packages from different providers. We help you understand if bundling internet and TV saves you money.",
+    title: "Service Bundle Information",
+    description: "Learn about bundled service packages. We help you understand the differences between bundle options.",
   },
 ];
 
@@ -58,10 +58,10 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Services - Uversal Link Assistance Services</title>
+        <title>Services - Independent Internet & Cable TV Guidance</title>
         <meta
           name="description"
-          content="Learn about Uversal Link's assistance services. We help you research and compare internet, TV, and connectivity providers."
+          content="Learn about our independent advisory services for internet, cable TV, and broadband. We help you understand service options - not affiliated with any ISP."
         />
       </Helmet>
       <Layout>
@@ -96,10 +96,13 @@ const Services = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-                Our Assistance Services
+                Independent Advisory Services
               </h1>
-              <p className="text-xl text-muted-foreground">
-                Independent guidance to help you navigate connectivity options and make informed decisions.
+              <p className="text-xl text-muted-foreground mb-4">
+                We help you understand internet, cable TV, and broadband service options. Get practical guidance on connectivity issues and learn how to navigate service provider processes.
+              </p>
+              <p className="text-sm text-muted-foreground/80">
+                <strong>Not an ISP. No brand affiliation.</strong> We provide independent third-party guidance only.
               </p>
             </motion.div>
           </div>
@@ -116,13 +119,13 @@ const Services = () => {
               >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 text-secondary mb-6">
                   <Wifi className="w-4 h-4" />
-                  <span className="font-medium">Connectivity Assistance</span>
+                  <span className="font-medium">Internet Guidance</span>
                 </div>
                 <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-6">
-                  Internet Provider Research & Comparison
+                  Internet Service Guidance
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  We help you research and compare internet providers in your area. Get independent guidance on speeds, pricing, and availability.
+                  Get help understanding your internet and broadband options. We provide educational guidance to help you navigate service provider processes. We are not an ISP.
                 </p>
 
                 <div className="space-y-6">
@@ -207,13 +210,13 @@ const Services = () => {
               >
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent mb-6">
                   <Tv className="w-4 h-4" />
-                  <span className="font-medium">TV Assistance</span>
+                  <span className="font-medium">Cable TV Guidance</span>
                 </div>
                 <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-6">
-                  TV Provider Comparison
+                  Cable TV Service Help
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Get help comparing TV providers, channel packages, and streaming options. We guide you through the decision process.
+                  Get independent cable TV assistance. We help you understand TV service options, channel packages, and streaming alternatives. Educational guidance only.
                 </p>
 
                 <div className="space-y-6">
@@ -260,13 +263,16 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <h2 className="font-display font-bold text-3xl md:text-4xl text-primary-foreground mb-6">
-                Ready for Expert Guidance?
+                Need Independent Guidance?
               </h2>
-              <p className="text-xl text-primary-foreground/70 mb-8">
-                Get personalized assistance finding the right connectivity providers for your needs.
+              <p className="text-xl text-primary-foreground/70 mb-4">
+                Talk to a third-party internet advisor. Get independent service guidance for your connectivity needs.
+              </p>
+              <p className="text-sm text-primary-foreground/60 mb-8">
+                <strong>Disclaimer:</strong> Not an ISP. No brand affiliation. We provide advisory services only.
               </p>
               <a href="tel:855-750-6771" className="btn-coral inline-flex items-center gap-2 text-lg">
-                <span>Call Now: (855) 750-6771</span>
+                <span>Call for Independent Service Guidance</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
             </motion.div>

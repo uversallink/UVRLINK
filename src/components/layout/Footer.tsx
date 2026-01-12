@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="bg-accent/20 border-b border-accent/30">
         <div className="container mx-auto px-4 py-4">
           <p className="text-center text-sm text-primary-foreground leading-relaxed">
-            <strong>Important:</strong> Uversal Link is an independent third-party service assistance startup. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider. All trademarks belong to their respective owners.
+            <strong>Important Disclaimer:</strong> Uversal Link is an independent third-party advisory service. We are NOT an internet service provider (ISP). We are not affiliated, authorized, or endorsed by any telecom or cable company. We do not sell official ISP services. All mentions of providers are for informational purposes only.
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-primary-foreground/70 leading-relaxed">
-              Your independent guide to finding the right connectivity solutions. We provide assistance and guidance to help you navigate internet, cable, and streaming options.
+              Independent third-party guidance for internet, cable TV, and broadband services. We help you understand service options and navigate provider processes. Not an ISP. No brand affiliation.
             </p>
           </div>
 
@@ -39,13 +39,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/plans" className="text-primary-foreground/70 hover:text-accent transition-colors">
-                  Service Guidance
-                </Link>
-              </li>
-              <li>
                 <Link to="/services" className="text-primary-foreground/70 hover:text-accent transition-colors">
-                  Assistance Options
+                  Advisory Services
                 </Link>
               </li>
               <li>
@@ -100,22 +95,22 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Award className="w-5 h-5 mt-0.5 text-accent flex-shrink-0" />
                 <div>
-                  <p className="font-medium">Independent</p>
-                  <p className="text-primary-foreground/70 text-sm">Unbiased guidance</p>
+                  <p className="font-medium">100% Independent</p>
+                  <p className="text-primary-foreground/70 text-sm">No ISP affiliation</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Users className="w-5 h-5 mt-0.5 text-accent flex-shrink-0" />
                 <div>
-                  <p className="font-medium">Expert Team</p>
-                  <p className="text-primary-foreground/70 text-sm">Industry experts</p>
+                  <p className="font-medium">Advisory Service</p>
+                  <p className="text-primary-foreground/70 text-sm">Third-party guidance</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Zap className="w-5 h-5 mt-0.5 text-accent flex-shrink-0" />
                 <div>
-                  <p className="font-medium">Fast Service</p>
-                  <p className="text-primary-foreground/70 text-sm">Quick assistance</p>
+                  <p className="font-medium">Educational Focus</p>
+                  <p className="text-primary-foreground/70 text-sm">Practical guidance</p>
                 </div>
               </li>
             </ul>
