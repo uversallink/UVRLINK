@@ -30,20 +30,16 @@ const CallPopup = () => {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader className="text-center">
-          <DialogTitle className="text-2xl font-bold text-center flex items-center justify-center gap-2">
-            <Phone className="w-6 h-6 text-accent animate-pulse" />
-            Call Us Now!
+          <DialogTitle className="text-2xl font-bold text-center">
+            Internet or Cable Not Working?
           </DialogTitle>
           <DialogDescription className="text-center text-base pt-2">
-            Get independent guidance on the best internet and TV plans for your needs.
+            Get instant help for slow internet, outages, setup issues, or cable problems.
           </DialogDescription>
         </DialogHeader>
         
         <div className="flex flex-col items-center gap-4 py-4">
           <div className="text-center">
-            <p className="text-sm text-muted-foreground mb-2">
-              Speak with our expert advisors
-            </p>
             <p className="text-3xl font-bold text-accent">
               {phoneNumber}
             </p>
@@ -54,10 +50,12 @@ const CallPopup = () => {
             className="w-full bg-gradient-to-r from-accent to-secondary hover:from-accent/90 hover:to-secondary/90 text-white font-semibold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <Phone className="w-5 h-5 mr-2" />
-            Call Now
+            CALL SUPPORT NOW
           </Button>
           
-          {/* Availability text removed as requested */}
+          <p className="text-xs text-center text-muted-foreground">
+            Quick assistance • No forms • Talk to a real agent
+          </p>
         </div>
       </DialogContent>
     </Dialog>
