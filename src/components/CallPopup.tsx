@@ -17,7 +17,7 @@ const CallPopup = () => {
     // Show popup when component mounts (on page load or refresh)
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 500); // Small delay for better UX
+    }, 5000); // 5 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
