@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import StickyCallButton from "../StickyCallButton";
+import CallPopup from "../CallPopup";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <Footer />
       <StickyCallButton />
+      <CallPopup />
     </div>
   );
 };
